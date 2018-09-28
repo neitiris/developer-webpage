@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('./assets/fonts/Roboto-Bold.ttf') format('embedded-opentype'),
+    url('./assets/fonts/Roboto-Medium.ttf')  format('opentype'),
+    url('./assets/fonts/Roboto-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,html{
+  padding: 0;
+  margin: 0;
+}
