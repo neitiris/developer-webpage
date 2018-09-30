@@ -12,23 +12,7 @@ app.use(compression());
 /**
  * Run the app by serving the static files in the dist directory
  */
-app.use(express.static(__dirname + '/dist', { redirect: false }));
-/**
- * If an incoming request uses a protocol other than HTTPS,
- * redirect that request to the same url but with HTTPS
- * @returns {Function}
- */
-const forceSSL = function() {
-  return function (req, res, next) {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-      return res.redirect(
-        ['https://', req.get('Host'), req.url].join('')
-      );
-    }
-    next();
-  }
-};
-app.use(forceSSL());
+app.use(express.static(__dirname + '/dist/my-personal-cv', { redirect: false }));
 
 /**
  * Start the app by listening on the default port
