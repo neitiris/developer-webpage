@@ -101,6 +101,14 @@ background-color: #52b3d9;
   font-weight: bold;
   color: white;
 }
+.details__item{
+  padding-right: 25px;
+  text-align: center;
+}
+.details__item-name-of{
+  text-align: left;
+  padding: 0;
+}
 .socials__icon{
   margin: 0 8px;
 }
@@ -270,7 +278,9 @@ color: green;
   color:  #989898;
   font-size: 18px;
   line-height: 25px;
-  transform: scaleX(1.0008)
+  transform: scaleX(1.0008);
+  text-align: right;
+  padding-right: 10px;
 }
 .skill-progress {
   position: relative;
@@ -330,7 +340,8 @@ color: green;
   width: 370px;
 }
 .circle_name{
-  padding-left: 17px;
+  padding-left: 40px;
+  text-align: center;
 }
 .circle_skill__list{
   display: flex;
