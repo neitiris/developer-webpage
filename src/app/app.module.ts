@@ -13,7 +13,7 @@ AuthGuardService,
 AuthService
 } from '../services';
 import { LandingPageComponent } from './pages';
-import {ProgressComponent} from './components/progress/progress.component';
+import {ProgressComponent} from './components';
 
 @NgModule({
   declarations: [
