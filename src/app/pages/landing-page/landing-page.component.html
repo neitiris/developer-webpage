@@ -143,13 +143,7 @@
       <h3 class="title subtitle">MORE SKILLS</h3>
       <ul class="circle_skill__list">
         <li *ngFor="let skill of circle_skills" class="circle-skill__item">
-          <div class="c100 p{{skill.number_of}} green">
-            <span>{{skill.number_of}}%</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
-          </div>
+          <app-progress value="{{ skill.number_of }}"></app-progress>
           <p class="skill_name circle_name">{{skill.name}}</p>
         </li>
       </ul>

@@ -82,11 +82,11 @@ export class LandingPageComponent implements OnInit {
     {number_of: '40', percent: '40%', name: 'UI/UX'}
   ];
   circle_skills = [
-    {number_of: '40', name: 'UI/UX'},
-    {number_of: '40', name: 'UI/UX'},
-    {number_of: '40', name: 'UI/UX'},
-    {number_of: '40', name: 'UI/UX'},
-    {number_of: '40', name: 'UI/UX'}
+    {number_of: 40, name: 'UI/UX'},
+    {number_of: 32, name: 'SAME SKILL'},
+    {number_of: 40, name: 'UI/UX'},
+    {number_of: 40, name: 'UI/UX'},
+    {number_of: 40, name: 'UI/UX'},
   ];
   achievements = [
     {icon: faFlask, name: 'YEARS EXPERIENCE', num: 0},
