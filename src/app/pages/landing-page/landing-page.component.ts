@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faFacebookF, faGithub, faLinkedin, faLinkedinIn, faTelegramPlane} from '@fortawesome/fontawesome-free-brands';
+import {faFacebookF, faGithub, faLinkedinIn, faTelegramPlane} from '@fortawesome/fontawesome-free-brands';
 import {
   faFlask,
   faThumbsUp,
@@ -10,7 +10,8 @@ import {
   faCalendar,
   faShare,
   faComments,
-  faMobile, faDesktop
+  faDesktop,
+  faMobileAlt
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -21,7 +22,6 @@ import {
 export class LandingPageComponent implements OnInit {
   faTelegramPlane = faTelegramPlane;
   faDownload = faDownload;
-  faMobile = faMobile;
   links = [
     {name: 'HOME', href: 'header' },
     {name: 'ABOUT', href: 'about'},
@@ -57,7 +57,7 @@ export class LandingPageComponent implements OnInit {
     }
   ];
   rectangles = [
-    {icon: faMobile, text: 'UI/UX'},
+    {icon: faMobileAlt, text: 'UI/UX'},
     {icon: faDesktop, text: 'WEB DESIGN'},
 
   ];
