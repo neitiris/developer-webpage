@@ -13,11 +13,13 @@ AuthGuardService,
 AuthService
 } from '../services';
 import { LandingPageComponent } from './pages';
+import {ProgressComponent} from './components/progress/progress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProgressComponent
   ],
   imports: [
     FontAwesomeModule,
@@ -33,7 +35,8 @@ import { LandingPageComponent } from './pages';
     ApiService,
     UserService,
     AuthService,
-    AuthGuardService
+    AuthGuardService,
+    ProgressComponent
   ],
   bootstrap: [AppComponent]
 })
