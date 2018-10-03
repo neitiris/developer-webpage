@@ -1,5 +1,5 @@
 <div class="landing-page__container">
-  <div class="header">
+  <div class="header" id="header">
     <div class="header__container">
       <div class="header__introduction-block">
         <h1 class="dev__name">Vlad Senchuk</h1>
@@ -25,10 +25,11 @@
       </div>
     </div>
     <nav class="header__nav">
-      <a *ngFor="let link of links" class="nav_link" href="{{link.href}}" >{{link.name}}</a>
+      <a *ngFor="let link of links" class="nav_link" href="#{{link.href}}" >{{link.name}}</a>
     </nav>
   </div>
-  <div class="about__container">
+
+  <div class="about__container" id="about">
     <h1 class="title">ABOUT ME</h1>
     <div class="br_img"><img src="../../../assets/image-personal/br.png" alt=""></div>
     <h3 class="title subtitle">OBJECTIVE</h3>
@@ -38,12 +39,11 @@
       <img *ngFor="let rectangle of rectangles" class="work_img" src="{{rectangle.img}}" alt="">
     </div>
   </div>
-  <div class="resume__container">
+
+  <div class="resume__container" id="resume">
     <h1 class="title">RESUME</h1>
     <div class="br_img"><img src="../../../assets/image-personal/br.png" alt=""></div>
     <h3 class="title subtitle">Education</h3>
-
-
     <section class="education timeline container">
       <div class="timeline-block">
         <div class="sm-rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>
@@ -53,7 +53,6 @@
           <span class="date">2004-2010</span>
         </div>
       </div>
-
       <div class="timeline-block">
         <div class="timeline-content">
           <h2>Event 2</h2>
@@ -61,7 +60,6 @@
           <span class="date">2004-2010</span>
         </div>
       </div>
-
       <div class="timeline-block">
         <div class="timeline-content">
           <h2>Event 3</h2>
@@ -69,7 +67,6 @@
           <span class="date">2004-2010</span>
         </div>
       </div>
-
       <div class="timeline-block">
         <div class="timeline-content">
           <h2>Event 4</h2>
@@ -77,7 +74,6 @@
           <span class="date">2004-2010</span>
         </div>
       </div>
-
       <div class="timeline-block">
         <div class="timeline-content">
           <h2>Event 5</h2>
@@ -107,7 +103,8 @@
       </div>
     </section>
   </div>
-  <div class="skills_container">
+
+  <div class="skills_container" id="skills">
     <h1 class="title skills_title">SKILLS</h1>
     <div class="br_img"><img src="../../../assets/image-personal/br.png" alt=""></div>
     <section class="skill">
@@ -144,7 +141,6 @@
     </section>
     <section class="more-skills">
       <h3 class="title subtitle">MORE SKILLS</h3>
-
       <ul class="circle_skill__list">
         <li *ngFor="let skill of circle_skills" class="circle-skill__item">
           <div class="c100 p{{skill.number_of}} green">
@@ -160,7 +156,7 @@
     </section>
   </div>
 
-  <div class="works_container">
+  <div class="works_container" id="works">
     <h1 class="title">WORKS</h1>
     <div class="br_img"><img src="/src/assets/image-personal/br.png" alt=""></div>
     <h3 class="title subtitle">ALL MY WORKS YOU CAN FIND AT <a href="https://github.com/neitiris">GITHUB</a></h3>
@@ -178,7 +174,7 @@
     </div>
   </div>
 
-  <div class="posts">
+    <div class="posts" id="posts">
     <h1 class="title">Latest Posts</h1>
     <div class="br_img"><img src="/src/assets/image-personal/br.png" alt=""></div>
     <div class="news__container">
@@ -201,7 +197,7 @@
     </div>
   </div>
 
-  <div class="hired__container">
+  <div class="hired__container" id="hired">
     <div class="hired__content">
       <div>
         <h2 class="get-hired__text">I`M AVIAILABLE FOR RECRUTING</h2>
@@ -210,7 +206,7 @@
     </div>
   </div>
 
-  <div class="feedback__container">
+  <div class="feedback__container" id="feedback">
     <h1 class="title">GET IN TOUCH</h1>
     <div class="br_img"><img src="../../../assets/image-personal/br.png" alt="">
       <div class="feedback_contact">
