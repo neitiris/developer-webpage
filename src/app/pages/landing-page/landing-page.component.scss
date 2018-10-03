@@ -77,6 +77,10 @@ li{
   line-height: 28px;
   text-align: center;
 }
+.button__cv, .button__telegram{
+  padding: 20px 10px;
+  text-decoration: none;
+}
 .button__telegram{
 background-color: #52b3d9;
   margin-right: 10px;
@@ -117,8 +121,26 @@ background-color: #52b3d9;
   text-align: left;
   padding: 0;
 }
+.socials{
+  display: flex;
+  margin-top: 20px;
+}
 .socials__icon{
   margin: 0 8px;
+}
+.social_fa{
+  font-size: 25px;
+  padding: 0 10px;
+}
+.relative_social{
+  position: relative;
+  background: url("../../../assets/image-personal/rectangle.png") no-repeat;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
 }
 .control_list{
   float: left;
@@ -164,6 +186,22 @@ background-color: #52b3d9;
 .about__container{
   padding-top: 110px;
   text-align: center;
+}
+.about__rectangle-container{
+  display: flex;
+  justify-content: center;
+}
+.about__rectangle{
+  background: url("../../../assets/image-personal/big-rectangle.png") no-repeat;
+  height: 260px;
+  width: 260px;
+  background-size: 100%;
+  margin: 0 30px;
+  padding: 70px 0 0;
+  color: #717171;
+}
+.rectangle_icon{
+  font-size: 70px;
 }
 .work_img{
   padding: 15px;
