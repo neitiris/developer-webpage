@@ -11,6 +11,7 @@ import {
   faShare,
   faComments
 } from '@fortawesome/free-solid-svg-icons';
+import {PageScrollConfig} from 'ngx-page-scroll';
 
 @Component({
   selector: 'app-landing-page',
@@ -29,14 +30,13 @@ export class LandingPageComponent implements OnInit {
   faShare = faShare;
   faComments = faComments;
   links = [
-    {name: 'HOME', href: '' },
-    {name: 'ABOUT', href: ''},
-    {name: 'RESUME', href: ''},
-    {name: 'SKILLS', href: ''},
-    {name: 'WORK', href: ''},
-    {name: 'BLOG', href: ''},
-    {name: 'CONTAT', href: ''},
-    {name: 'PAGES', href: ''}
+    {name: 'HOME', href: 'header' },
+    {name: 'ABOUT', href: 'about'},
+    {name: 'RESUME', href: 'resume'},
+    {name: 'SKILLS', href: 'skills'},
+    {name: 'WORK', href: 'works'},
+    {name: 'BLOG', href: 'posts'},
+    {name: 'GET HIRED', href: 'hired'},
   ];
   socials = [
     {href: '', img: '../../../assets/image-personal/facebook-rectangle.png'},
@@ -108,7 +108,8 @@ export class LandingPageComponent implements OnInit {
     {icon: faShare, name: '02 Oct 2018'},
     {icon: faComments, name: '02 Oct 2018'},
   ];
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

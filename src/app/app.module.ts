@@ -5,6 +5,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ApproutingModule } from './approuter.module';
 import { AppComponent } from './app.component';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 import {
 ApiService,
 UserService,
@@ -20,6 +21,7 @@ import { LandingPageComponent } from './pages';
   ],
   imports: [
     FontAwesomeModule,
+    NgxPageScrollModule,
     ApproutingModule,
     FormsModule,
     BrowserModule,
