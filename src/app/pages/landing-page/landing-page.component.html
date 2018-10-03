@@ -28,11 +28,10 @@
         </div>
       </div>
     </div>
-    <nav class="header__nav">
-      <a *ngFor="let link of links" class="nav_link" href="#{{link.href}}" >{{link.name}}</a>
-    </nav>
   </div>
-
+  <nav class="header__nav sticky">
+    <a *ngFor="let link of links" class="nav_link" href="#{{link.href}}" >{{link.name}}</a>
+  </nav>
   <div class="about__container" id="about">
     <h1 class="title">ABOUT ME</h1>
     <div class="br_img"><img src="../../../assets/image-personal/br.png" alt=""></div>
@@ -118,7 +117,7 @@
       <table class="skill_table">
         <tr class="skill_table" *ngFor="let skill of skills">
           <td class="skill_name">
-            <p>{{skill.name}} <span>{{skill.number_of}}</span></p>
+            <p>{{skill.name}} <span>{{skill.number_of}}%</span></p>
           </td>
           <td class="skill_bar">
             <div class="progress skill-progress">
@@ -133,7 +132,7 @@
       <table class="skill_table">
         <tr class="skill_table" *ngFor="let skill of skills_column">
           <td class="skill_name">
-            <p>{{skill.name}} <span>{{skill.number_of}}</span></p>
+            <p>{{skill.name}} <span>{{skill.number_of}}%</span></p>
           </td>
           <td class="skill_bar">
             <div class="progress skill-progress">
@@ -151,7 +150,7 @@
       <ul class="circle_skill__list">
         <li *ngFor="let skill of circle_skills" class="circle-skill__item">
           <app-progress value="{{ skill.number_of }}"></app-progress>
-          <p class="skill_name circle_name">{{skill.name}}</p>
+          <p class="skill_name circle_name">{{skill.name}}%</p>
         </li>
       </ul>
     </section>
@@ -238,6 +237,6 @@
   </div>
   <div class="clear"></div>
   <footer class="footer">
-    <p>Created by<a class="footer__link" href="https://www.linkedin.com/in/vladislav-senchuk-94b57a168/">Vlad Senchuk</a> 2018 © All rights reserved</p>
+    <p>Created by <a class="footer__link" href="https://www.linkedin.com/in/vladislav-senchuk-94b57a168/">Vlad Senchuk</a> 2018 © All rights reserved</p>
   </footer>
 </div>

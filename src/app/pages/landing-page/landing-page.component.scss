@@ -28,7 +28,7 @@ li{
 ***********************************************************/
 .header{
   background: $font-color-dark;
-  height: 764px;
+  height: 694px;
 }
 .header__container{
   height: 694px;
@@ -159,6 +159,11 @@ background-color: #52b3d9;
   font-weight: bolder;
   color: $font-color-dark;
   text-decoration: none;
+}
+.sticky{
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 /***********************************************************
                       ABOUT
@@ -589,6 +594,7 @@ color: forestgreen;
                       FOOTER
 ***********************************************************/
 .footer{
+  margin-top: 30px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -598,5 +604,6 @@ color: forestgreen;
   color: $font-color-secondary;
 }
 .footer__link{
-  color: $font-color-secondary;
+  color: #9c9696;
+  text-decoration: none;
 }
