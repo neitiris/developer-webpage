@@ -5,8 +5,10 @@
         <h1 class="dev__name">Vlad Senchuk</h1>
         <h3 class="dev__status">User interface/user experience developer</h3>
         <p class="dev__description">Young developer who want`s create perfect sites</p>
-        <button class="button button__telegram"><fa-icon class="button_icon" [icon]="faTelegramPlane"></fa-icon> SEND ME A MESSAGE</button>
-        <button class="button button__cv"><fa-icon class="button_icon" [icon]="faDownload"></fa-icon>DOWNLOAD MY CV</button>
+        <a class="button button__telegram" href="https://t.me/Neitiris">
+          <fa-icon class="button_icon" [icon]="faTelegramPlane"></fa-icon> SEND ME A MESSAGE</a>
+        <a class="button button__cv" href="./assets/vlad-senchuk-cv.docx" download>
+          <fa-icon class="button_icon" [icon]="faDownload"></fa-icon>DOWNLOAD MY CV</a>
       </div>
       <div class="header__details-block">
         <div class="bg_gradient">
@@ -19,7 +21,9 @@
             </tr>
           </table>
           <div class="socials">
-            <a *ngFor="let social of socials" class="socials__icon" href="{{social.href}}"><img src="{{social.img}}" alt=""></a>
+            <a *ngFor="let social of socials" class="socials__icon" href="{{social.href}}">
+              <div class="relative_social"><fa-icon class="social_fa" [icon]="social.img"></fa-icon></div>
+            </a>
           </div>
         </div>
       </div>
@@ -35,8 +39,11 @@
     <h3 class="title subtitle">OBJECTIVE</h3>
     <p class="dev__description">some objective</p>
     <h3 class="title subtitle">WHAT I DO?</h3>
-    <div>
-      <img *ngFor="let rectangle of rectangles" class="work_img" src="{{rectangle.img}}" alt="">
+    <div class="about__rectangle-container">
+      <div class="about__rectangle" *ngFor="let rectangle of rectangles">
+       <fa-icon class="rectangle_icon" [icon]="rectangle.icon"></fa-icon>
+        <p class="rectangle_text">{{rectangle.text}}</p>
+      </div>
     </div>
   </div>
 

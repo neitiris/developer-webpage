@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTelegramPlane } from '@fortawesome/fontawesome-free-brands';
+import {faFacebookF, faGithub, faLinkedin, faLinkedinIn, faTelegramPlane} from '@fortawesome/fontawesome-free-brands';
 import {
   faFlask,
   faThumbsUp,
@@ -9,9 +9,9 @@ import {
   faEdit,
   faCalendar,
   faShare,
-  faComments
+  faComments,
+  faMobile, faDesktop
 } from '@fortawesome/free-solid-svg-icons';
-import {PageScrollConfig} from 'ngx-page-scroll';
 
 @Component({
   selector: 'app-landing-page',
@@ -21,14 +21,7 @@ import {PageScrollConfig} from 'ngx-page-scroll';
 export class LandingPageComponent implements OnInit {
   faTelegramPlane = faTelegramPlane;
   faDownload = faDownload;
-  faFlask = faFlask;
-  faThumbsUp = faThumbsUp;
-  faUsers = faUsers;
-  faAward = faAward;
-  faEdit = faEdit;
-  faCalendar = faCalendar;
-  faShare = faShare;
-  faComments = faComments;
+  faMobile = faMobile;
   links = [
     {name: 'HOME', href: 'header' },
     {name: 'ABOUT', href: 'about'},
@@ -39,11 +32,9 @@ export class LandingPageComponent implements OnInit {
     {name: 'GET HIRED', href: 'hired'},
   ];
   socials = [
-    {href: '', img: '../../../assets/image-personal/facebook-rectangle.png'},
-    {href: '', img: '../../../assets/image-personal/twitter-rectangle.png'},
-    {href: '', img: '../../../assets/image-personal/rectangle.png'},
-    {href: '', img: '../../../assets/image-personal/rectangle.png'},
-    {href: '', img: '../../../assets/image-personal/rectangle.png'}
+    {href: 'https://www.facebook.com/neitiris', img: faFacebookF},
+    {href: 'https://github.com/neitiris', img: faGithub},
+    {href: 'https://www.linkedin.com/in/vladislav-senchuk-94b57a168/', img: faLinkedinIn},
   ];
   details = [
     {
@@ -66,10 +57,9 @@ export class LandingPageComponent implements OnInit {
     }
   ];
   rectangles = [
-    {img: '../../../assets/image-personal/big-rectangle.png'},
-    {img: '../../../assets/image-personal/big-rectangle.png'},
-    {img: '../../../assets/image-personal/big-rectangle.png'},
-    {img: '../../../assets/image-personal/big-rectangle.png'}
+    {icon: faMobile, text: 'UI/UX'},
+    {icon: faDesktop, text: 'WEB DESIGN'},
+
   ];
   skills = [
     {number_of: '60', percent: '60%', name: 'UI/UX'},
