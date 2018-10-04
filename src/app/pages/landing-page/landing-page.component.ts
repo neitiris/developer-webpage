@@ -62,21 +62,18 @@ export class LandingPageComponent implements OnInit {
 
   ];
   skills = [
-    {number_of: '60', percent: '60%', name: 'UI/UX'},
-    {number_of: '50', percent: '50%', name: 'Angular'},
-    {number_of: '40', percent: '40%', name: 'Javascript' }
+    {number_of: '60', percent: '60%', name: 'HTML'},
+    {number_of: '40', percent: '40%', name: 'CSS'},
+    {number_of: '45', percent: '45%', name: 'Javascript'}
   ];
   skills_column = [
-    {number_of: '40', percent: '40%', name: 'UI/UX'},
-    {number_of: '40', percent: '40%', name: 'UI/UX'},
-    {number_of: '40', percent: '40%', name: 'UI/UX'}
+    {number_of: '40', percent: '40%', name: 'GIT'},
+    {number_of: '40', percent: '40%', name: 'ANGULAR'},
+    {number_of: '15', percent: '15%', name: 'BOOTSTRAP'}
   ];
   circle_skills = [
-    {number_of: 40, name: 'UI/UX'},
-    {number_of: 32, name: 'SAME SKILL'},
-    {number_of: 40, name: 'UI/UX'},
-    {number_of: 40, name: 'UI/UX'},
-    {number_of: 40, name: 'UI/UX'},
+    {number_of: 57, name: 'LINUX'},
+    {number_of: 80, name: 'WINDOWS'}
   ];
   achievements = [
     {icon: faFlask, name: 'YEARS EXPERIENCE', num: 0},

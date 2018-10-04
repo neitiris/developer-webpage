@@ -49,61 +49,40 @@
   <div class="resume__container" id="resume">
     <h1 class="title">RESUME</h1>
     <div class="br_img"><img src="../../../assets/image-personal/br.png" alt=""></div>
-    <h3 class="title subtitle">Education</h3>
-    <section class="education timeline container">
-      <div class="timeline-block">
-        <div class="sm-rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>
-        <div class="timeline-content">
-          <h2>Event 1</h2>
-          <p>Event 1 Description </p>
-          <span class="date">2004-2010</span>
-        </div>
-      </div>
-      <div class="timeline-block">
-        <div class="timeline-content">
-          <h2>Event 2</h2>
-          <p>Event 2 Description </p>
-          <span class="date">2004-2010</span>
-        </div>
-      </div>
-      <div class="timeline-block">
-        <div class="timeline-content">
-          <h2>Event 3</h2>
-          <p>Event 3 Description </p>
-          <span class="date">2004-2010</span>
-        </div>
-      </div>
-      <div class="timeline-block">
-        <div class="timeline-content">
-          <h2>Event 4</h2>
-          <p>Event 4 Description </p>
-          <span class="date">2004-2010</span>
-        </div>
-      </div>
-      <div class="timeline-block">
-        <div class="timeline-content">
-          <h2>Event 5</h2>
-          <p>Event 5 Description </p>
-          <span class="date">2004-2010</span>
-        </div>
-        <div class="sm-rectangle btm_rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>
-      </div>
-    </section>
-    <h3 class="title subtitle">Education</h3>
+    <!--<h3 class="title subtitle">Education</h3>-->
+    <!--<section class="education timeline container">-->
+      <!--<div class="timeline-block">-->
+        <!--<div class="sm-rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>-->
+        <!--<div class="timeline-content">-->
+          <!--<h2>SCHOOL</h2>-->
+          <!--<p>Secondary shool sertificate </p>-->
+          <!--<span class="date">2004-2010</span>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="timeline-block">-->
+        <!--<div class="timeline-content">-->
+          <!--<h2>Event 5</h2>-->
+          <!--<p>Event 5 Description </p>-->
+          <!--<span class="date">2004-2010</span>-->
+        <!--</div>-->
+        <!--<div class="sm-rectangle btm_rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>-->
+      <!--</div>-->
+    <!--</section>-->
+    <h3 class="title subtitle">Experience</h3>
     <section class="experience container timeline">
       <div class="timeline-block">
         <div class="sm-rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>
-        <div class="timeline-content">
-          <h2>Event 1</h2>
-          <p>Event 1 Description </p>
-          <span class="date">2004-2010</span>
+        <div class="timeline-content timeline-content-left">
+          <h2>SELF EDUCATION</h2>
+          <p> Self-education in the field of programming. </p>
+          <span class="date date-left">2016-NOW</span>
         </div>
       </div>
       <div class="timeline-block">
         <div class="timeline-content">
           <h2>Event 5</h2>
-          <p>Event 5 Description </p>
-          <span class="date">2004-2010</span>
+          <p>WORK</p>
+          <span class="date">2018-FUTURE</span>
         </div>
         <div class="sm-rectangle btm_rectangle"><img src="/src/assets/image-personal/sm-rectangle.png" alt=""></div>
       </div>
@@ -150,7 +129,7 @@
       <ul class="circle_skill__list">
         <li *ngFor="let skill of circle_skills" class="circle-skill__item">
           <app-progress value="{{ skill.number_of }}"></app-progress>
-          <p class="skill_name circle_name">{{skill.name}}%</p>
+          <p class="skill_name circle_name">{{skill.name}}</p>
         </li>
       </ul>
     </section>
@@ -200,8 +179,8 @@
   <div class="hired__container" id="hired">
     <div class="hired__content">
       <div>
-        <h2 class="get-hired__text">I`M AVIAILABLE FOR RECRUTING</h2>
-        <button class="get-hired__button">GET HIRED</button>
+        <h2 class="get-hired__text">I`M AVAILABLE FOR RECRUITING</h2>
+        <a *ngFor="let link of links" class="get-hired__button" href="#home" >GET HIRED</a>
       </div>
     </div>
   </div>
