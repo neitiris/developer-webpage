@@ -256,6 +256,9 @@ li {
   padding: 1em;
   box-shadow: 0 0 8px whitesmoke; }
 
+.timeline-content-left {
+  text-align: right; }
+
 .timeline-block:hover .timeline-content, .timeline-block:hover::before {
   color: whitesmoke;
   background: forestgreen;
@@ -273,6 +276,9 @@ li {
   padding: 5px 0;
   font-size: 16px;
   background: white; }
+
+.date-left {
+  text-align: left; }
 
 .date:hover {
   color: forestgreen; }
