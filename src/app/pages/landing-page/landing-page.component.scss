@@ -766,7 +766,7 @@ color: forestgreen;
     width: 100%;
   }
   .nav_item{
-    padding: 15px 1.5%;
+    padding: 15px 1.5% !important;
   }
   .bg_gradient{
     padding: 5% 2%;
@@ -856,13 +856,48 @@ color: forestgreen;
   .feedback__input, .feedback__textarea{
     width: 90%;
   }
+  .socials{
+    margin-top: 8px;
+  }
+  .relative_social{
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+  }
+
+  .social_fa{
+    font-size: 15px;
+    margin-top: 3px;
+  }
+  .header__details-block{
+    background-size: 200%;
+  }
+  .timeline-block:before{
+    left: 50.55%;
+  }
+  .btm_rectangle{
+    left: 48%;
+  }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 360px){
+  .header{
+    height: 430px;
+    min-height: unset;
+  }
+  .header__details-block{
+    height: 230px;
+    background-size: 160%;
+  }
+  .about__container{
+    width: 95%;
+    margin: auto;
+  }
   .experience_title{
     font-size: 19px;
   }
   .absolute-shape{
-    bottom: 169.5px;
+    bottom: 176.5px;
+    height: 50px;
   }
   .achievements__item{
     padding: 0;
@@ -879,5 +914,32 @@ color: forestgreen;
   }
   .news_details__item {
     font-size: 9px;
+  }
+  .timeline-block:before{
+    left: 50.4%;
+  }
+  .btm_rectangle{
+    left: 47.4%;
+  }
+  .container{
+    width: 95%;
+  }
+  .timeline-content {
+    width: 35%;
+  }
+  .experience_description{
+    font-size: 13px;
+  }
+  .details__list{
+    font-size: 9px;
+  }
+  .skill_name{
+    font-size: 8px;
+  }
+  .skill_bar{
+    width: 78px;
+  }
+  .nav_item{
+    padding: 5px 1.5% !important;
   }
 }
